@@ -1,0 +1,8 @@
+name: sample-ruby
+services:
+- environment_slug: ruby
+  github:
+    branch: master
+    deploy_on_push: true
+    repo: digitalocean/sample-ruby
+  name: sample-ruby
