@@ -1,8 +1,7 @@
 spec:
-  name: sample-ruby
+  name: sample-jruby
   services:
-  - environment_slug: ruby
-    git:
-      branch: main
+  - git:
+      branch: jruby
       repo_clone_url: https://github.com/digitalocean/sample-ruby.git
-    name: sample-ruby
+    name: sample-jruby

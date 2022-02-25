@@ -1,8 +1,7 @@
-name: sample-ruby
+name: sample-jruby
 services:
-- environment_slug: ruby
-  github:
-    branch: main
+- github:
+    branch: jruby
     deploy_on_push: true
     repo: digitalocean/sample-ruby
-  name: sample-ruby
+  name: sample-jruby

@@ -1,13 +1,25 @@
-# frozen_string_literal: true
+source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-source "https://rubygems.org"
+ruby '2.6.8', :engine => 'jruby', :engine_version => '9.3.2.0'
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
+gem 'rails', '~> 6.1.4', '>= 6.1.4.6'
+# Use Puma as the app server
+gem 'puma', '~> 5.0'
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+# gem 'jbuilder', '~> 2.7'
+# Use Redis adapter to run Action Cable in production
+# gem 'redis', '~> 4.0'
+# Use Active Model has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
 
-# gem "rails"
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+# gem 'rack-cors'
 
-gem "puma", "~> 4.3"
+group :development do
+  gem 'listen', '~> 3.3'
+end
 
-gem "sinatra", "~> 2.0"
-
-gem "cowsay", "~> 0.3.0"
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
