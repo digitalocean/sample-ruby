@@ -1,36 +1,46 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    base64 (0.2.0)
+    base64 (0.3.0)
     cowsay (0.3.0)
+    logger (1.7.0)
     mustermann (3.0.3)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.4)
     puma (6.6.0)
       nio4r (~> 2.0)
-    rack (2.2.13)
-    rack-protection (3.2.0)
+    rack (3.1.16)
+    rack-protection (4.1.1)
       base64 (>= 0.1.0)
-      rack (~> 2.2, >= 2.2.4)
+      logger (>= 1.6.0)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.1.1)
+      base64 (>= 0.1.0)
+      rack (>= 3.0.0)
+    rackup (2.2.1)
+      rack (>= 3)
     ruby2_keywords (0.0.5)
-    sinatra (3.2.0)
+    sinatra (4.1.1)
+      logger (>= 1.6.0)
       mustermann (~> 3.0)
-      rack (~> 2.2, >= 2.2.4)
-      rack-protection (= 3.2.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.1.1)
+      rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
-    tilt (2.6.0)
+    tilt (2.6.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  base64 (~> 0.2.0)
+  base64 (~> 0.3.0)
   cowsay (~> 0.3.0)
-  puma (~> 6.4)
-  sinatra (~> 3.1)
+  puma (~> 6.6)
+  rackup (~> 2.2)
+  sinatra (~> 4.1)
 
 RUBY VERSION
-   ruby 3.3.7p123
+   ruby 3.4.5p51
 
 BUNDLED WITH
    2.5.22
