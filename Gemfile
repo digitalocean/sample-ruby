@@ -9,7 +9,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem "puma", "~> 6.6"
 
-gem "sinatra", "~> 4.1"
+gem "sinatra", "~> 4.2"
 
 gem "cowsay", "~> 0.3.0"
 
